@@ -1,0 +1,395 @@
+*{
+        margin:0;
+        padding:0;
+        font-family: "Crimson Text", serif;
+        font-size: 14pt;
+        box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+
+nav{
+    background-image: url("chessboxing_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height:auto;
+    position: relative;
+}
+
+.heading{
+    font-family: "Kanit", sans-serif;
+    display: inline-block;
+    position: relative;
+    margin-top:12%;
+    color:white;
+    font-size: 120px;
+}
+.box{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.links{
+    display: flex;
+    margin-top: 22px;
+    padding: 12px;
+    padding-bottom: 0;
+    
+}
+
+.links li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    padding:10px 60px;
+}
+.links li a:hover{
+    background-color:white;
+    color:yellow;
+    opacity: 0.7;
+}
+#last{
+    padding-right: 5px;
+}
+.main-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3%;
+}
+.content{
+        width:75%;
+}
+.card-div {
+       float: right;
+       width: 70%; 
+       height: 100%;
+       
+       margin-bottom: 4px;
+       margin-top:12px;
+}
+     
+.card {
+       background-color: #f5f5f5;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+       box-sizing: border-box;
+       overflow: hidden;
+       padding: 20px;
+       border: 4px solid rgb(221, 215, 215);
+       border-radius: 20px;
+       margin-left: 35px;
+}
+  
+.card img {
+       width: 100%;
+       height: 350px;
+}
+.video-div{
+  float: right;
+  width: 70%; 
+  height: 100%;
+  
+  margin-bottom: 4px;
+  margin-top:12px;
+}
+.video{
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+  border: 4px solid rgb(221, 215, 215);
+  border-radius: 20px;
+  margin-left: 35px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 350px;
+}
+
+    
+.card-content {
+     
+      text-align: center;
+
+}
+.text{
+      
+        line-height: 1.5;
+        margin-bottom: 10px;
+       
+
+}
+.card-text{
+  text-align: justify;
+  line-height: 1.5;      
+}
+.subheading{
+        display:flex;
+         
+        align-items: center;
+        margin:0px 15px;
+        padding:12px 0px;
+        
+       
+       
+}
+.symbol{
+ font-size: 56px;
+}
+.subheading h2{
+  margin-top: 12px;
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+   font-weight: bolder;
+}
+#history,#rule,#Particular,#man-versus-machine{
+  padding:0px 11px;
+}
+#map-flex{
+        border: 4px solid rgb(221, 215, 215);
+        border-radius: 25px;
+        
+        padding: 20px 10px;
+        margin-top: 30px;
+  }
+  #map-flex-heading{
+        text-align:center ;
+        margin-bottom: 25px;
+        font-style: italic;   
+  }
+  .flex-container{
+        display:flex;
+        gap:20px;
+        padding: 10px;     
+  }
+  table{
+        flex-basis: 1;
+        border-collapse: collapse;   
+  }
+  #th{
+        border-top: 2px solid rgb(221, 215, 215);
+        border-bottom: 2px solid rgb(221, 215, 215);
+        text-align: center;
+  }
+  td{
+        padding:12px;
+        border-top: 1px solid rgb(221, 215, 215);
+        border-bottom: 1px solid rgb(221, 215, 215);
+  }
+  .map-container{
+        flex-basis: 58%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+   }
+  .map-container img{
+         width:100%;
+         height:auto;
+  }
+  .points{
+          margin-left: 5%;
+  }
+  .quatation{
+           
+           padding: 1% 4%;
+           text-align: center; 
+           font-style: italic; 
+           
+  }
+  #author-name{
+    font-style: normal; 
+  }
+  footer{
+     display:flex;
+     justify-content: center;
+     text-align: center;
+     padding:50px 0px;
+     color:white;
+     background-color: black;
+
+  }
+  footer a{
+    color:white;
+  }
+  
+  @media screen and (max-width: 1500px) {
+        
+        
+         
+          .card-div {
+           width: 750px; 
+           
+         }
+       
+      
+  }
+@media screen and (max-width: 1100px){
+        nav{
+            width:95vw;
+        }
+        .heading{
+        
+        font-size: 70px;
+       }
+      
+       .links li a{
+         padding: 10px ;
+       }
+       .content{
+        width:90%;
+      }
+      .card-div{
+        width:60%;
+      }
+      symbol{
+        font-size: 52px;
+       }
+       .subheading h2{
+         
+         font-size: 28px;
+        
+         
+       }
+}
+@media screen and (max-width: 600px){
+        .header{
+            display: block;
+        }
+        nav{
+            width:100%;
+            background-size:contain;
+        }
+        
+           
+        
+        .heading{
+            font-family: "Kanit", sans-serif;
+            display: inline-block;
+                position: relative;
+                margin-top:8%;
+                color:white;
+                font-size: 52px;
+        }
+        .card{
+          margin-left :0;
+          margin-right: 10px;
+          
+        }
+       .box{
+        display:block ;
+        }
+       .links{
+            width:100%;
+            flex-direction: column;
+            padding: 0;
+       }
+       .links li{
+            width:100%;
+        }
+       .links  li a{
+             display: block;
+             width:100%;
+             text-align: end;
+             padding-right: 10px;
+        }
+        .content{
+                width:100%
+        }
+        .container{
+                 padding:0px 10px;
+                display: flex;
+                flex-direction: column;
+           }
+         .card-div{
+                margin-left: 0;
+                margin-bottom: 30px;
+                width: 100%;
+                height:auto;
+                display: flex;
+                flex-direction: column;
+         }
+         .video-div{
+          margin-left: 0;
+          margin-bottom: 30px;
+          width: 100%;
+          height:auto;
+          display: flex;
+          flex-direction: column;
+         }
+         .video{
+           margin-left: 0;
+         }
+         .points{
+           margin-left: 10%;
+           margin-bottom: 3%;
+           margin-top: 3%;
+         }
+         .text{
+   
+           padding:0px 2px;
+         }
+         table{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items:center;
+         }
+         .card{
+           width:100%;
+         }
+         .video{
+          width:100%;
+         }
+         
+         
+         #map-flex{
+               width:98%;
+         }
+         .flex-container{
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;    
+         }
+         .map-container{
+           flex-basis: 100%;
+           
+          } 
+          .symbol{
+            font-size: 52px;
+           }
+           .subheading h2{
+             
+             font-size: 26px;
+             margin-top: 20px;
+
+             
+           } 
+           .text{
+            margin-bottom: 0;
+           }
+           .subheading{
+            
+            margin:0px;
+            
+           }
+           
+           
+    }
+        
+
